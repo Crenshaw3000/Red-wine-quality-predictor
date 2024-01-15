@@ -16,12 +16,11 @@ Red Wine Quality Predictor was created using random forest,a machine learning mo
 * Readxl
 
 ### Red Wine Quality Predictor App Input <br />
-![Red Wine Quality Predictor App Input](/Users/shirleycrenshaw/Dropbox/Mac/Desktop/Red_wine_quality/red_wine_predictor_app_input.png "Red Wine Quality Predictor App Input") < br/>
+![Red Wine Quality Predictor App Input](red_wine_predictor_app_input.png "Red Wine Quality Predictor App Input") <br/>
 
-<br>
 
 ### Red Wine Quality Predictor App Output <br />
-![Red Wine Quality Predictor App Output](/Users/shirleycrenshaw/Dropbox/Mac/Desktop/Red_wine_quality/red_wine_predictor_app_output.png "Red Wine Quality Predictor App Output") <br />
+![Red Wine Quality Predictor App Output](red_wine_predictor_app_output.png "Red Wine Quality Predictor App Output") <br />
 
 
 
