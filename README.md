@@ -7,7 +7,7 @@ Red Wine Quality Predictor was created using random forest,a machine learning mo
 ## <a name="technologies"></a> Technologies
 * R
 * RStudio
-* RShiny
+* Shiny
 * RandomForest
 * Tidyverse
 * Caret
