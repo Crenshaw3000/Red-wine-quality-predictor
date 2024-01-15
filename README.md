@@ -21,3 +21,6 @@ Red Wine Quality Predictor was created using random forest,a machine learning mo
 ###Red Wine Quality Predictor App Output
 ![Red Wine Quality Predictor App Output](/Users/shirleycrenshaw/Dropbox/Mac/Desktop/Red_wine_quality/red_wine_predictor_app_output.png "Red Wine Quality Predictor App Output") <br />
 
+knitr::include_graphics("/Users/shirleycrenshaw/Dropbox/Mac/Desktop/Red_wine_quality/red_wine_predictor_app_output.png")
+
+
