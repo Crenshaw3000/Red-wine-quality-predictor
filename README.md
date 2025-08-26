@@ -29,7 +29,7 @@ This approach building multiple models on bootstrapped samples and then aggregat
 
 #### Data Processing <br />
 The dataset was prepared by converting numerical quality scores (0-10) into four meaningful categorical ratings and removing the original numerical column. This transformation makes the model output more interpretable for end users. The original numerical quality ratings were recoded into four categories using the mutate() and recode() functions:
-`r
+```r
 df2 <- df |>
   mutate(rating = recode(quality,         # new column called rating
                          "10" = "Excellent",			
@@ -46,12 +46,12 @@ df2 <- df |>
 
 # remove quality from dataframe 
 df3 <- subset(df2, select = -quality)
-`
+```
 
 Missing data was not a concern for this analysis since random forest algorithms inherently handle missing values through their bootstrapping and voting mechanisms, eliminating the need for manual imputation or case deletion.
 
 <img width="2792" height="846" alt="image" src="https://github.com/user-attachments/assets/962f21b8-7d47-420c-bc81-9fab1608f3fe" />
-##### Random forest model, Confusion matrix and error plot. Black line: Overall OOB error across all classes and Colored lines: Class-specific error rates (Average=cyan, Bad=green, Good=blue dashed, Poor=red)
+Above Figure. Random forest model, Confusion matrix and error plot. Black line: Overall OOB error across all classes and Colored lines: Class-specific error rates (Average=cyan, Bad=green, Good=blue dashed, Poor=red)
 
 #### Model Tuning <br />
 * Trees (ntree): Set to 2,001 trees, though the error plot shows stabilization around 200-300 trees, suggesting fewer trees would be sufficient. 
