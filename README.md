@@ -19,13 +19,14 @@ Red Wine Quality Predictor was created using random forest,a machine learning mo
 #### What is Random Forest<br />
 Random Forest is an ensemble machine learning technique that combines multiple decision trees trained on different subsets of the data, with the goal of reducing the overfitting often seen in individual decision trees. In other words, it can be applied to both classification and regression tasks by constructing many trees during training and aggregating their results.
 
-For the Red Wine Quality Prediction Project, Random Forest was selected because it effectively captures complex, non-linear relationships between chemical properties and wine quality. Since wine quality is influenced by multiple interacting factors such as alcohol content, volatile acidity, and sugar levels. Random Forest provides a more accurate and robust prediction compared to simpler models.
+For the Red Wine Quality Prediction Project, Random Forest was used as a classification model because wine quality scores were grouped into categories such as “Bad,” “Poor,” “Average,” “Good,” and “Excellent.” Random Forest was selected because it effectively captures complex, non-linear relationships between chemical properties and wine quality. Since wine quality is influenced by multiple interacting factors—such as alcohol content, volatile acidity, and sugar levels—Random Forest provides a more accurate and robust prediction compared to simpler models.
 
 #### How Random Forest Works <br />
-With Random Forest, the process begins by creating multiple bootstrapped datasets from the original data. For each dataset, a decision tree is built using a random subset of features at each split. This process is repeated across many bootstrapped samples, resulting in a "forest" of decision trees. Because the model combines many trees, it becomes more robust and less prone to overfitting.
+With Random Forest, you first create random datasets from your data called bootstrapped datasets. For each dataset, a decision tree is constructed using a random subset of variables at each step of the tree. This process is repeated with many bootstrapped datasets, creating a “forest” of decision trees. Because there are multiple trees to rely on, the model becomes more robust and less prone to overfitting.
 
-The model’s performance is evaluated using the out-of-bag (OOB) data, which refers to the samples not included in each bootstrapped dataset. When new data is introduced, it is passed through all the trees in the forest, and the final prediction is determined by majority voting (for classification) or averaging (for regression).
-This approach building multiple models on bootstrapped samples and then aggregating their predictions is known as bagging (bootstrap aggregating).
+The quality of the model is evaluated using data not included in the bootstrapped datasets, called the out-of-bag (OOB) data. When new data is fed into the model, it passes through all the trees in the forest, and the final prediction is determined by majority vote (for classification) or averaging (for regression).
+
+The process of creating multiple bootstrapped datasets and aggregating the predictions is known as bagging (bootstrap aggregating).
 
 #### Data Processing <br />
 The dataset was prepared by converting numerical quality scores (0-10) into four meaningful categorical ratings and removing the original numerical column. This transformation makes the model output more interpretable for end users. The original numerical quality ratings were recoded into four categories using the mutate() and recode() functions:
