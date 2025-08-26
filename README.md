@@ -66,10 +66,10 @@ The OOB error rate is calculated by comparing the OOB predictions to the actual 
 #### Confusion Matrix: <br />
 | Actual → | Average | Bad | Good | Poor | Class Error % |
 |----------|---------|-----|------|------|---------------|
-| **Average** | 547     | 0   | 13   | 115  | 18.36        |
-| **Bad**     | 0       | 0   | 0    | 1    | 100.00       |
-| **Good**    | 1       | 0   | 3    | 0    | 86.67        |
-| **Poor**    | 122     | 8   | 0    | 472  | 19.73        |
+| **Average** | 547     | 0   | 1   | 122  | 18.36        |
+| **Bad**     | 0       | 0   | 0    | 8    | 100.00       |
+| **Good**    | 13       | 0   | 3    | 0    | 86.67        |
+| **Poor**    | 115     | 1   | 0    | 472  | 19.73        |
 
 #### Confusion Matrix Analysis:
 Rows represent predicted classes, columns represent actual (true) classes
