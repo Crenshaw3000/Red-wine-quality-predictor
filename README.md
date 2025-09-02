@@ -1,6 +1,6 @@
 # Red Wine Quality Predictor <br />
 
-Red Wine Quality Predictor was created using random forest,a machine learning model in RStudio.  To crate the GUI interface Rshiny was used. This app will generate a prediction of a red wine when parameters are entered. 
+Red Wine Quality Predictor was developed using a Random Forest machine learning model in RStudio. The app features a GUI built with Shiny, allowing users to input wine parameters and receive a predicted quality score for red wine in real time.
 
 ![Red Wine Quality Predictor App](redwine_predictor.gif "Red Wine Quality Predictor App") <br />
 
